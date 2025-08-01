@@ -6,6 +6,8 @@ import { useSearchParams } from 'next/navigation';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 
+
+export const dynamic = 'force-dynamic';
 const Page = () => {
 
   const searchparams=useSearchParams()
