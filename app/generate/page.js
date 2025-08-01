@@ -14,13 +14,20 @@ const Page = () => {
 
   const searchparams=useSearchParams();
   const [links,setlinks]=useState([{link:"",linktext:""}])
-  const [handle,sethandle]=useState(searchparams.get('handle'))
+  const [handle,sethandle]=useState('')
   const [pic,setpic]=useState("")
   const [desc,setdesc]=useState("")
 
   const router= useRouter();
 
   const {user,isSignedIn,isLoaded}=useUser()
+
+  useEffect(() => {
+    const param = searchparams.get('handle');
+    if (param) {
+      setHandle(param);
+    }
+  }, [searchparams]);
 
   useEffect(()=>{
     if(isLoaded){
