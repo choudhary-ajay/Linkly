@@ -37,12 +37,12 @@ export default function Home() {
              </div>
         </div>
         <div className="flex items-center justify-center">
-          <Image fill alt='home' src="home.png" className="homeimage h-[80vh]"></Image>
+          <img alt='home' src="home.png" className="homeimage h-[80vh]"></img>
         </div>
       </section>
       <section className="min-h-[110vh] bg-[#ff9414] grid grid-cols-2 justify-center">
         <div className="flex justify-center items-center">
-          <Image fill alt="bottom" className="h-[80vh]" src='bottom.png'></Image>
+          <img alt="bottom" className="h-[80vh]" src='bottom.png'></img>
         </div>
         <div className="mr-[10vw] flex flex-col justify-center ">
           <h1 className="font-bold text-7xl">Get All your Links in a page in free by simply sign in.</h1>

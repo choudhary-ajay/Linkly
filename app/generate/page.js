@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams } from 'next/navigation';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 
 const Page = () => {
 
@@ -107,7 +106,7 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
            </div>
         </div>
         <div className='w-full h-screen object-fill flex items-center'>
-            <Image fill  alt='generate' className='h-[80%]' src="generate.webp"></Image>
+            <img  alt='generate' className='h-[80%]' src="generate.webp"></img>
         </div>
         <ToastContainer/>
     </div>

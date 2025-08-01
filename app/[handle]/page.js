@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import clientPromise from "@/lib/mongodb"
-import Image from 'next/image';
 
 export default async function page({params}){
     const handle=(await params).handle
@@ -19,7 +18,7 @@ export default async function page({params}){
 
     return <>{ item && <div className="min-h-screen bg-purple-300 text-black flex flex-col items-center">
         <div className="flex justify-start items-center  p-5 flex-col">
-            <Image alt="pic" fill className="w-[100px] h-[100px] object-cover object-top border border-black rounded-full" src={item.pic}></Image>
+            <img alt="pic" className="w-[100px] h-[100px] object-cover object-top border border-black rounded-full" src={item.pic}></img>
            <span className="text-xl my-2 font-bold">@{item.handle}</span>
         </div>
         <div className="flex flex-col gap-3 items-center my-2">
