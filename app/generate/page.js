@@ -6,11 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams } from 'next/navigation';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
+import { Suspense } from 'react';
 
 
 
 
-const Page = () => {
+const Mycomponent = () => {
 
   const searchparams=useSearchParams();
   const [links,setlinks]=useState([{link:"",linktext:""}])
@@ -25,7 +26,7 @@ const Page = () => {
   useEffect(() => {
     const param = searchparams.get('handle');
     if (param) {
-      setHandle(param);
+      sethandle(param);
     }
   }, [searchparams]);
 
@@ -124,4 +125,9 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
   )
 }
 
-export default Page
+
+export default function Page(){
+  return(
+    <Suspense fallback={<div>Loading...</div>}><Mycomponent/></Suspense>
+  )
+}
