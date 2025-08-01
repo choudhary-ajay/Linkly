@@ -3,15 +3,17 @@ export const dynamic = 'force-dynamic';
 import React, { useEffect, useState } from 'react'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import { useSearchParams } from 'next/navigation';
+
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
+import { Suspense } from 'react';
+import GenerateContent from './GenerateContent';
 
 
 
 const Page = () => {
 
-  const searchparams=useSearchParams()
+  
   const [links,setlinks]=useState([{link:"",linktext:""}])
   const [handle,sethandle]=useState(searchparams.get('handle'))
   const [pic,setpic]=useState("")
@@ -112,6 +114,9 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
             <img  alt='generate' className='h-[80%]' src="generate.webp"></img>
         </div>
         <ToastContainer/>
+        <Suspense fallback={<div>Loading...</div>}>
+      <GenerateContent />
+    </Suspense>
     </div>
   )
 }
