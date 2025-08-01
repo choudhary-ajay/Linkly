@@ -5,7 +5,6 @@ import { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import { toast, ToastContainer } from "react-toastify";
 import { UserButton, SignInButton, SignedIn, SignedOut,SignUpButton } from '@clerk/nextjs';
-import Image from 'next/image';
 
 
 export default function Home() {
