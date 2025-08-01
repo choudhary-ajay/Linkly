@@ -1,8 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams } from 'next/navigation';
+import { useUser } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
 
 const page = () => {
 
@@ -11,6 +13,19 @@ const page = () => {
   const [handle,sethandle]=useState(searchparams.get('handle'))
   const [pic,setpic]=useState("")
   const [desc,setdesc]=useState("")
+
+  const router= useRouter();
+
+  const {user,isSignedIn,isLoaded}=useUser()
+
+  useEffect(()=>{
+    if(isLoaded){
+    if(!isSignedIn){
+    router.push("/")
+  }}
+  },[isSignedIn])
+
+  
 
   const handlechange= (index,link,linktext)=>{
     setlinks((initiallinks)=>{
@@ -37,7 +52,8 @@ const raw = JSON.stringify({
   "links": links,
   "handle":handle,
   "pic":pic,
-  "desc":desc
+  "desc":desc,
+  "email":user.primaryEmailAddress.emailAddress
 });
 
 const requestOptions = {
@@ -62,9 +78,9 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
   }
 }
   return (
-    <div className='grid grid-cols-2 min-h-screen bg-[#e9c0ea]'>
+    <div className='sm:grid p-5 pt-32 sm:pt-0 sm:grid-cols-2 min-h-screen text-black bg-[#e9c0ea]'>
         <div className='flex flex-col justify-center items-center w-full gap-3'>
-          <div>
+          <div className=''>
             <h1 className='font-bold text-4xl my-4'>Create your Linktree</h1>
             <div>
               <h2 className='font-semibold text-xl'>Step 1: Claim your handle</h2>

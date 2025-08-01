@@ -4,7 +4,7 @@ export async function POST(request){
     try{
         const body=await request.json()
         const client=await clientPromise;
-        const db=client.db("bitree")
+        const db=client.db("Linkly")
         const collection =db.collection("Links")
         
         const doc= await collection.findOne({handle:body.handle})
