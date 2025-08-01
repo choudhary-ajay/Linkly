@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useUser } from "@clerk/nextjs";
 import { toast, ToastContainer } from "react-toastify";
 import { UserButton, SignInButton, SignedIn, SignedOut,SignUpButton } from '@clerk/nextjs';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -36,12 +37,12 @@ export default function Home() {
              </div>
         </div>
         <div className="flex items-center justify-center">
-          <img src="home.png" className="homeimage h-[80vh]"></img>
+          <Image fill alt='home' src="home.png" className="homeimage h-[80vh]"></Image>
         </div>
       </section>
       <section className="min-h-[110vh] bg-[#ff9414] grid grid-cols-2 justify-center">
         <div className="flex justify-center items-center">
-          <img className="h-[80vh]" src='bottom.png'></img>
+          <Image fill alt="bottom" className="h-[80vh]" src='bottom.png'></Image>
         </div>
         <div className="mr-[10vw] flex flex-col justify-center ">
           <h1 className="font-bold text-7xl">Get All your Links in a page in free by simply sign in.</h1>

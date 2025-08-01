@@ -3,7 +3,7 @@ import { auth,currentUser } from '@clerk/nextjs/server'
 import clientPromise from '@/lib/mongodb';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-const page = async () => {
+const Page = async () => {
 
 
   
@@ -36,4 +36,4 @@ const page = async () => {
   )
 }
 
-export default page
+export default Page

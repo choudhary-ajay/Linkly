@@ -5,8 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useSearchParams } from 'next/navigation';
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
-const page = () => {
+const Page = () => {
 
   const searchparams=useSearchParams()
   const [links,setlinks]=useState([{link:"",linktext:""}])
@@ -106,11 +107,11 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
            </div>
         </div>
         <div className='w-full h-screen object-fill flex items-center'>
-            <img className='h-[80%]' src="generate.webp"></img>
+            <Image fill  alt='generate' className='h-[80%]' src="generate.webp"></Image>
         </div>
         <ToastContainer/>
     </div>
   )
 }
 
-export default page
+export default Page
