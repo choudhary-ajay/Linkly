@@ -20,12 +20,12 @@ A **Linktree-like web application** built with **Next.js** and **MongoDB** that 
 - **Frontend:** Next.js, React, Tailwind CSS
 - **Backend:** Next.js API Routes
 - **Database:** MongoDB
-- **Authentication:** Clerk/Auth.js (or other library)
+- **Authentication:** Clerk
 
 ---
 ## 🔗 Live Demo
 
-[🌐 Click here to view the live site](https://your-deployed-project-link.com)
+[🌐 Click here to view the live site](https://linkly-l9c3-h6rqsgc62-ajay-choudharys-projects-5f8d8db0.vercel.app/)
 
 ## 📸 Screenshots
 
@@ -33,11 +33,3 @@ A **Linktree-like web application** built with **Next.js** and **MongoDB** that 
 ![Profile Screenshot](assets/profile.png)
 
 ---
-
-
-## 🚀 Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/linktree-clone.git
-   cd linktree-clone
