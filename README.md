@@ -1,4 +1,4 @@
-# 🌐 Linktree Clone
+# 🌐 Linkly
 
 A **Linktree-like web application** built with **Next.js** and **MongoDB** that allows users to create a personalized page containing all their important links in one place. Includes **secure user authentication** so each user can manage their own profile and links.
 
@@ -30,6 +30,8 @@ A **Linktree-like web application** built with **Next.js** and **MongoDB** that 
 ## 📸 Screenshots
 
 ![Homepage Screenshot](assets/homepage.png)
-![Profile Screenshot](assets/profile.png)
+![Generate Screenshot](assets/generate.png)
+![Dashboard](assets/dashboard.png)
+![LinkPage](assets/linkpage.png)
 
 ---
