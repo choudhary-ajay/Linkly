@@ -93,7 +93,7 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
     <div className='sm:grid p-5 pt-32 sm:pt-0 sm:grid-cols-2 min-h-screen text-black bg-[#e9c0ea]'>
         <div className='flex flex-col justify-center items-center w-full gap-3'>
           <div className=''>
-            <h1 className='font-bold text-4xl my-4'>Create your Linktree</h1>
+            <h1 className='font-bold text-4xl my-4'>Create your Linkpage</h1>
             <div>
               <h2 className='font-semibold text-xl'>Step 1: Claim your handle</h2>
               <input value={handle || "" } onChange={(e)=>{sethandle(e.target.value)}} className='bg-white my-2 mx-5 p-1 px-2 rounded-3xl focus:outline-pink-300' type="text" placeholder='Choose a handle'></input>
