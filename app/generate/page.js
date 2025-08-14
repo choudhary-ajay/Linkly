@@ -113,7 +113,7 @@ const r=await fetch("http://localhost:3000/api/add", requestOptions)
             <h2 className='font-semibold text-xl'>Step 3: Add picture And description</h2>
             <input value={pic} onChange={(e)=>setpic(e.target.value)} className='bg-white my-2 mx-5 p-1 px-2 rounded-3xl focus:outline-pink-300' placeholder="Enter link to your picture"></input>
             <input value={desc} onChange={(e)=>setdesc(e.target.value)} className='bg-white my-2 mx-5 p-1 px-2 rounded-3xl focus:outline-pink-300' placeholder="Enter description"></input>
-            <button disabled={pic=="" || handle=="" || links[0].link=="" || links[0].linktext==""} onClick={()=>{submitlinks()}} className='p-1 w-fit px-3 disabled:bg-slate-600 mx-5 my-2 cursor-pointer bg-gray-900 rounded-3xl text-white'>Create your Linktree</button>
+            <button disabled={pic=="" || handle=="" || links[0].link=="" || links[0].linktext==""} onClick={()=>{submitlinks()}} className='p-1 w-fit px-3 disabled:bg-slate-600 mx-5 my-2 cursor-pointer bg-gray-900 rounded-3xl text-white'>Create your Linkpage</button>
            </div>
            </div>
         </div>
