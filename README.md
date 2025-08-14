@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Linktree Clone
 
-## Getting Started
+A **Linktree-like web application** built with **Next.js** and **MongoDB** that allows users to create a personalized page containing all their important links in one place. Includes **secure user authentication** so each user can manage their own profile and links.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔐 **User Authentication** — Sign up, log in, and log out securely.
+- 🗂 **Custom Profile** — Add, edit, and remove unlimited links.
+- 🎨 **Responsive Design** — Works perfectly on mobile, tablet, and desktop.
+- ⚡ **Fast Rendering** — Powered by **Next.js** for optimized performance.
+- 📦 **Database Storage** — All user data stored securely in **MongoDB**.
+- 🌐 **Public Profile URL** — Shareable link for others to access your page.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** MongoDB
+- **Authentication:** Clerk
 
-To learn more about Next.js, take a look at the following resources:
+---
+## 🔗 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[🌐 Click here to view the live site](https://linkly-l9c3-h6rqsgc62-ajay-choudharys-projects-5f8d8db0.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+![Homepage Screenshot](assets/homepage.png)
+![Profile Screenshot](assets/profile.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
